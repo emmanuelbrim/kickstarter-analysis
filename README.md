@@ -1,33 +1,44 @@
-# An Analysis of Kickstarter Campaigns
-Analyzing kickstarter data to gain insight into their outcomes.
+# AN ANALYSIS OF KICKSTARTER CAMPAIGNS 
+**Analyzing Kickstarter Data to Gain Insight Into Their Outcomes.
 
-## Introduction
+## Overview of The Project
 
 Crowdfunding projects can be sucessful or fail. What informs thier final outcomes is key to future exercises.
 This project invloved the use of Excel to analyze data from crowdfunding projects in 21 countries to unravel possible key indicators that contributed to their outcomes.
-The information revealed from the analysis is narrowed down to provide insight into why some theatre productions succeeded and others not.
+The information revealed from the analysis of the data is narrowed down to provide insight into why crowdfundraising campaigns for some theatre productions succeeded whiles others failed.
 
-### Findings
+### Purpose
+The purpose of this project is to help Louise, a playwright make informed decision on kickstarting her play "Fever". The intent is to analyze data from other campaigns in order to provide louise with information on the relationship that exist between lunch dates or funding goals and the final outcome of these campaigns. 
 
-1. Location
-The analysis proves that the setting for a project contributes to its success. Threatre production in Great Britain was more successful than that in the United States.
-We can deduce that the audience in Great Britain is inclined to threatre especially plays which was a more successful subcategory. 
-![GB theatre campaigns](https://user-images.githubusercontent.com/100079292/155608553-a4e7511c-e9b5-4b60-9e20-bd3e5f5f80bd.png)
-![US Theatre campaigns](https://user-images.githubusercontent.com/100079292/155609419-1aa39fe8-8ef6-456f-95d1-d34a4e7c6cef.png)
+## Analysis and Challenges
 
-2. Time
-A quick analysis of the time a campaign is lunched also provides interesting information on its outcomes. 
-![Lunch Date outcome Chart](https://user-images.githubusercontent.com/100079292/155610589-7d4e0499-740e-488d-a9ce-746935fb37e2.png)
-A look at the line chart showing the datapoints for outcomes per lunch dates indicates that funding for theater events was more sucessful in the months of May to July. However the month of May was more suitable for funding as having the highest level of success per the chart. Ironically the same month also recorded the highest number of failed campaigns for theatre, with a difference of 2 projects from that of July and October who recorded the same number of failed projects.
+### Analysis of Outcomes Based on Launch Date
 
-3. Fundraising Goal
-The analysis of the data from pledges, backers and goals for kickstarters draw insight into how such relationship affect their outcomes.
-A measure of central tendency on the data shows that campaigns with high fundraising goals attracted less backers hence low pledges and this resulted in their inability to take off. From the data the average pledge of successful campaigns was slightly more than their average goals. An indication that campaigns with reasonalble fundraising goals received corresponding pledges. 
+An analysis of the time a campaign was lunched in relation to its outcome provided interesting information.
+Since the focus of here is on outcomes for theatre productions based on lunch dates, it was prudent to convert the Unix Timestamps to readable forms so that the year of the campaigns could be generated. Separate columns(Q and R) were created on the kickstarter sheet to hold date created conversion and Years data respectively.
+Then a pivot table was created using data populated from the original Kickstarter data set to identify trends. The table included all outcomes in column "F" (not including live) marched against the lunch dates of all campaigns in column "R". This invloved selecting lunch dates as the Axis for the table and outcomes for the series and value area of the table. The enitre table was filtered by Years and Parent catergory to reflect different trend at each period. 
+In the final analysis of the data on lunched dates, a line chart was created to represent the outcome of all theatre funding campaigns based on their launch dates.
 
-#### Conclusion
-To conclude its evident from the analysis that the best outcome for a kickstarter campaign for a theatre production will be to have a funding goal set within reasonalble limits. A higher goal might attract less than proportionate pledge and ruin the campaign.
-The location of the campaign cannot be overlooked aswell. Audience is key since some locations had a higher rate of funding than the others. 
-The time setting is also critical for the success of the campaign. Its evident that the more successful months of lunching a campaign was in the summer. 
-##### Recommendation
-- With a budget of $10,000 Louise goal is twice that of sucessful campaigns and should consider revising that goal. 
-- The most successful time to lunch her campaign should be in Summer, preferably in May which recorded the highest number of suncessful campaigns. 
+The chart below shows the relationship between launch dates and outcomes of crowdfunding campaigns for theatre.
+![Theatre Outcomes by Launch date](path/to/Theatre Outcomes by Launch date.png)
+
+### Analysis of Outcomes Based on Goals
+One of the questions that louise sort to get an answer to was if an outcome of a kickstarter campaign is influenced by the funding goal.
+In order to provide this, a new worksheet was created with column headers for all Funding Goals, their outcomes,ie successful, failed and canceled and their percentages. 
+In the "Goal" column, all the goals of kickstarter campaigns were categorized based on a 5000 amount range. The COUNTIFS function was then used to populate the number of outcome from each range in the Goal column "A" using "play" a subcategory of theatre. The result was the number of successful, failed and canceled outcomes for each range of funding goal shown in column B, C and D. To generate a more refined result, the percentages of each outcome was created in column F, G and H by dividing the values in B, C and D by the total outcomes in E and changing the number format to percentages.
+In the end a line chart was drawn to show outcomes based on goals with funding goals and percentages of each outcome as its fields. 
+Below is a line chart showing the relationship between funding goals and outcomes.
+![Outcomes vs Goals](path/to/Outcomes_vs_Goals1.png)
+
+### Challenges of The Project
+Though the data set includes facts about kickstarter campaigns, the analysis that was carriedout in this project was focused on a single category; theatre.
+The analyst must therefore remember to always filter his source data to reflect this area of enquiry. 
+On the horizontal axis of the line chart "Outcomes_vs_Goals" holds the amount ranges for all the funding goals. However the values could only fit after font size was reduced which made its data point difficult to read. A Line chart with markers is therefore more appropriate to represent such information.  
+
+## Results
+- The most successful kickstarter campaigns for theatre was launched in May and the month of october recorded the highest in failed campaigns.
+- Kickstarter Campaigns with goals of an amount lessthan 5000 were more successful.
+- Though the analysis shows that goals within reasonable amounts are more successful, it is equally important to know what motivates backers of such goals.
+- Histogram and bar charts
+
+
