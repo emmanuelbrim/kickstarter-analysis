@@ -20,7 +20,7 @@ Then a pivot table was created using data populated from the original Kickstarte
 In the final analysis of the data on lunched dates, a line chart was created to represent the outcome of all theatre funding campaigns based on their launch dates.
 
 The chart below shows the relationship between launch dates and outcomes of crowdfunding campaigns for theatre.
-![Theatre Outcomes by Launch date](path/to/Theatre Outcomes by Launch date.png)
+https://github.com/emmanuelbrim/kickstarter-analysis/commit/a8a12e39f1f12a25df0f50fe2bc8adf328135934#diff-d9373ec0288fcac90082d42bde8a1a3bd5b3274af45eec0958eae78884c77222
 
 ### Analysis of Outcomes Based on Goals
 One of the questions that louise sort to get an answer to was if an outcome of a kickstarter campaign is influenced by the funding goal.
