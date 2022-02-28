@@ -28,6 +28,7 @@ One of the questions that louise sort to get an answer to was if an outcome of a
 In order to provide this, a new worksheet was created with column headers for all Funding Goals, their outcomes,ie successful, failed and canceled and their percentages. 
 In the "Goal" column, all the goals of kickstarter campaigns were categorized based on a 5000 amount range. The COUNTIFS function was then used to populate the number of outcome from each range in the Goal column "A" using "play" a subcategory of theatre. The result was the number of successful, failed and canceled outcomes for each range of funding goal shown in column B, C and D. To generate a more refined result, the percentages of each outcome was created in column F, G and H by dividing the values in B, C and D by the total outcomes in E and changing the number format to percentages.
 In the end a line chart was drawn to show outcomes based on goals with funding goals and percentages of each outcome as its fields. 
+
 Below is a line chart showing the relationship between funding goals and outcomes.
 
 ![Outcomes_vs_Goals1](https://user-images.githubusercontent.com/100079292/155920968-8d61bc46-6400-452d-a55e-8e88c0aca57e.png)
