@@ -20,7 +20,8 @@ Then a pivot table was created using data populated from the original Kickstarte
 In the final analysis of the data on lunched dates, a line chart was created to represent the outcome of all theatre funding campaigns based on their launch dates.
 
 The chart below shows the relationship between launch dates and outcomes of crowdfunding campaigns for theatre.
-https://github.com/emmanuelbrim/kickstarter-analysis/commit/a8a12e39f1f12a25df0f50fe2bc8adf328135934#diff-d9373ec0288fcac90082d42bde8a1a3bd5b3274af45eec0958eae78884c77222
+
+![Theatre Outcomes by Launch date](https://user-images.githubusercontent.com/100079292/155920986-3f61ed45-fd84-4f6a-b7e3-06e63ffdd900.png)
 
 ### Analysis of Outcomes Based on Goals
 One of the questions that louise sort to get an answer to was if an outcome of a kickstarter campaign is influenced by the funding goal.
@@ -28,7 +29,8 @@ In order to provide this, a new worksheet was created with column headers for al
 In the "Goal" column, all the goals of kickstarter campaigns were categorized based on a 5000 amount range. The COUNTIFS function was then used to populate the number of outcome from each range in the Goal column "A" using "play" a subcategory of theatre. The result was the number of successful, failed and canceled outcomes for each range of funding goal shown in column B, C and D. To generate a more refined result, the percentages of each outcome was created in column F, G and H by dividing the values in B, C and D by the total outcomes in E and changing the number format to percentages.
 In the end a line chart was drawn to show outcomes based on goals with funding goals and percentages of each outcome as its fields. 
 Below is a line chart showing the relationship between funding goals and outcomes.
-![Outcomes vs Goals](path/to/Outcomes_vs_Goals1.png)
+
+![Outcomes_vs_Goals1](https://user-images.githubusercontent.com/100079292/155920968-8d61bc46-6400-452d-a55e-8e88c0aca57e.png)
 
 ### Challenges of The Project
 Though the data set includes facts about kickstarter campaigns, the analysis that was carriedout in this project was focused on a single category; theatre.
